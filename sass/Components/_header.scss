@@ -1,0 +1,21 @@
+.header {
+    display: grid;
+    grid-template-columns: 4fr 50px 1fr;
+    background-color: maroon; 
+    height: 75px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.notify {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.currentUser {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #383838;
+    margin: 15px 0;
+}

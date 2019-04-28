@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 4fr 50px 1fr;
+  background-color: maroon;
+  height: 75px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.notify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentUser {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #383838;
+  margin: 15px 0;
+}
+
+.icnBell {
+  display: flex;
+  fill: #fff;
+  opacity: 0.7;
+  height: 25px;
+  width: 25px;
+}
+.icnBell:hover {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.memberPics {
+  height: 40px;
+  border-radius: 50%;
+  padding: 0px 10px;
+}
+
+.appName {
+  height: 75px;
+  justify-content: left;
+  color: #fff;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.name {
+  color: #fff;
+  margin: 0;
+  padding: 0px 15px;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
