@@ -1,54 +1,233 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #cccccc;
+  background-color: #f1f0ec;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: left;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 4fr 50px 1fr;
-  background-color: maroon;
-  height: 75px;
-  max-width: 1000px;
-  margin: 0 auto;
+  grid-template-columns: 3fr 50px 1fr;
+  background-color: #800000cc;
+  height: 50px;
+  max-width: 1050px;
+}
+
+.app-name {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #fff;
+  padding-left: 15px;
 }
 
 .notify {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
 }
 
-.currentUser {
+.current-user {
   display: flex;
   align-items: center;
-  border-left: 1px solid #383838;
-  margin: 15px 0;
+  justify-content: center;
+  border-left: 1px solid rgba(56, 56, 56, 0.5);
+  margin: 0;
+  height: 50px;
 }
 
-.icnBell {
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #690000cc;
+  height: 60px;
+}
+
+.font-weight-2 {
+  font-weight: 200;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 1024px;
+  margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "main";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  max-width: 1050px;
+}
+
+main {
+  grid-area: main;
+  max-width: 1024px;
+}
+
+.notify-icon {
   display: flex;
   fill: #fff;
   opacity: 0.7;
   height: 25px;
   width: 25px;
 }
-.icnBell:hover {
+.notify-icon:hover {
+  transition-duration: 0.3s;
   opacity: 1;
-  transition-duration: 1s;
+  transform: scale(1.2);
+  fill-rule: nonzero;
+  fill: currentColor;
+  color: #fff;
+  transform-origin: center;
 }
 
-.memberPics {
+#navigation > a img {
+  width: 45px;
+  height: 45px;
+  opacity: 0.7;
+  padding: 0 15px;
+}
+#navigation > a img:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.social-image {
+  display: flex;
+  justify-content: center;
+  background-color: #800000cc;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.social-icon {
+  fill: white;
+}
+
+.twitter {
+  display: block;
+  width: 50px;
+  transform: translate3d(0, 5px, 0);
+}
+
+.facebook {
+  display: block;
+  width: 50px;
+  transform: translate3d(0, 10px, 0);
+}
+
+.google-plus {
+  display: block;
+  width: 50px;
+}
+
+.message {
+  padding: 0 15px;
+}
+
+.form-area {
+  width: 95%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.settings {
+  padding: 0 15px;
+}
+
+.switch-ios.switch-light > span span {
+  width: 100%;
+}
+
+.switch-ios.switch-light {
+  width: 50%;
+}
+.switch-ios.switch-light a {
+  cursor: pointer;
+}
+.switch-ios.switch-light > span {
+  width: 100px;
+}
+
+.switch-ios.switch-light input:checked ~ span {
+  box-shadow: inset 0 0 0 30px rgba(128, 0, 0, 0.7);
+}
+.switch-ios.switch-light input:checked ~ span a {
+  border-color: #690000;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.email p {
+  width: 175px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile p {
+  width: 175px;
+}
+
+select:invalid {
+  color: #999;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: #000;
+}
+
+.form-field {
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  padding: 10px;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.member-pics {
   height: 40px;
   border-radius: 50%;
   padding: 0px 10px;
 }
 
-.appName {
-  height: 75px;
-  justify-content: left;
-  color: #fff;
-  padding-left: 15px;
+.app-name-text {
   margin: 0;
 }
 
@@ -57,6 +236,34 @@ body {
   margin: 0;
   padding: 0px 15px;
   opacity: 0.7;
+  align-content: center;
+}
+
+main {
+  text-align: center;
+}
+
+main {
+  display: grid;
+}
+
+.traffic-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.traffic-nav {
+  display: flex;
+}
+
+.traffic-nav-link {
+  padding: 0 15px;
+}
+.traffic-nav-link:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

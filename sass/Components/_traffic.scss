@@ -1,0 +1,19 @@
+.traffic-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.traffic-nav {
+  display: flex;
+}
+
+.traffic-nav-link {
+  padding: 0 15px;
+
+  &:hover {
+    color: #fff;
+  }
+}

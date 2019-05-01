@@ -1,12 +1,60 @@
-.icnBell {
+.notify-icon {
     display: flex;
-    fill: #fff;
+    fill:#fff; 
     opacity: .7;
     height: 25px;
     width: 25px;
+    
   
     &:hover {
-    opacity: 1;
-    transition-duration:  1s;
+      transition-duration:  .3s;
+      opacity: 1;
+      transform: scale(1.2);
+      fill-rule: nonzero;
+      fill: currentColor;
+      color: #fff;
+      transform-origin: center;
   }
+}
+
+#navigation > a img {
+  width: 45px;
+  height: 45px;
+  opacity: .7;
+  padding: 0 15px;
+  
+  &:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+}
+
+.social-image {
+  display: flex;
+  justify-content: center;
+  background-color: #800000cc;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.social-icon {
+  fill: white;
+}
+
+.twitter {
+  display: block;  
+  width: 50px;
+  transform: translate3d(0, 5px, 0);
+}
+
+.facebook {
+  display: block;
+  width: 50px;
+  transform: translate3d(0, 10px, 0);
+}
+
+.google-plus {
+  display: block; 
+  width: 50px;
 }

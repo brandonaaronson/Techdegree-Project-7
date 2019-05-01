@@ -1,0 +1,28 @@
+// -- grid setup -- //
+
+.grid-container {
+  display: grid;
+  max-width: 1024px;
+  margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+        "header"
+        "nav"
+        "main";
+}
+
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  max-width: 1050px;
+}
+
+main {
+  grid-area: main;
+  max-width: 1024px; 
+}
