@@ -1,0 +1,22 @@
+.message {
+  padding: 0 15px; 
+}
+
+.widgetContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.form-field {
+}
+
+.form-area {
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px
+}

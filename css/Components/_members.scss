@@ -1,0 +1,30 @@
+.new-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.members-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    & p {
+        margin-right: 15px;
+    }
+}
+
+.members-text {
+    width: 50%;
+    align-self: initial;
+
+    & p {
+        margin:0;
+    }
+}
+
+.new-members,
+.member-activity {
+    padding: 0 15px;
+}

@@ -1,9 +1,15 @@
+
+.traffic {
+  @include border($primary-border-color);
+  padding: 0 15px;
+} 
+
 .traffic-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  
 }
 
 .traffic-nav {
@@ -14,6 +20,7 @@
   padding: 0 15px;
 
   &:hover {
+    transition: .3s;
     color: #fff;
   }
 }

@@ -1,0 +1,4 @@
+.daily {
+    @include border($primary-border-color);
+    padding: 0 15px;
+}
