@@ -11,11 +11,13 @@
 
 .traffic-nav {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
 }
 
 .traffic-nav-link {
-
+  & li {
+    margin: 0 10px;
+  }
   &:hover {
     transition: .3s;
     color: #fff;

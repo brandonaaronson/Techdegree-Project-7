@@ -2,8 +2,7 @@
 
 .grid-container {
   display: grid;
-  max-width: 1024px;
-  margin: 0 auto;
+  padding: 0;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: 

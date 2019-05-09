@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 50px 1fr;
     background-color: #800000cc; 
     height: 50px;
-    max-width: 1050px;
 }
 
 .app-name {
@@ -27,7 +26,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid rgba(56, 56, 56, .5);
+    border-left: 1px solid $primary-border-color;
     margin:  0;
     height: 50px; 
+
+    & img {
+      margin-left: 10px;
+    }
 }
