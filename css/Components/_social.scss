@@ -1,38 +1,39 @@
 
 .social {
+  @include border($primary-border-color); 
     display: block;
     justify-content: center;
-    padding: 0 15px;
+    
 
     & h3 {
         width: 100%;
+        margin-left: 15px;
     }
 }
 
 .social-flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
 }
 
  .social-container {
-    text-align: center;
-    margin: 0;
-    width: 30%;  
+  text-align: center;
+  margin: 0;
+  width: 33%;  
 
-    &:nth-child(2) {
-        border-left: 1px solid $primary-border-color;
-        border-right: 1px solid $primary-border-color;
-    }
+  &:nth-child(2) {
+      border-left: 1px solid $primary-border-color;
+      border-right: 1px solid $primary-border-color; 
+  }
 }
 
 .social-image {
-    display: flex;
-    justify-content: center;
-    background-color: #800000cc;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  background-color: #800000cc;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
   }
   
   .social-icon {
@@ -40,18 +41,17 @@
   }
   
   .twitter {
-    display: block;  
-    width: 50px;
+    
     transform: translate3d(0, 5px, 0);
   }
   
   .facebook {
     display: block;
-    width: 50px;
+    width: 75%;
     transform: translate3d(0, 10px, 0);
   }
   
   .google-plus {
     display: block; 
-    width: 50px;
+    width: 75%; 
   }

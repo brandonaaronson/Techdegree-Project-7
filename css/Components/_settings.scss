@@ -8,12 +8,12 @@
  }
 
 .switch-ios.switch-light {
-  width: 50%;
+  width: 100%;
   & a {
     cursor: pointer;
   }
-  & > span {
-    width: 100px; 
+  &  span {
+    width: 75px; 
   }
 }
 
@@ -58,7 +58,7 @@ option {
 }
 
 .form-field {
-  width: 95%;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid rgb(169, 169, 169);
   padding: 10px;
@@ -67,5 +67,8 @@ option {
 .settings-button {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px 0; 
+  & button {
+    border-radius: 5px;
+  }
 }

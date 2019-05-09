@@ -1,4 +1,9 @@
 @mixin border($color){
-    border-bottom: 1px solid $color;
-    border-right: 1px solid $color;
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+}
+
+@mixin social {
+  display: block;  
+  width: 75%;
 }

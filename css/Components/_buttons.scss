@@ -1,0 +1,18 @@
+
+.settings-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; 
+  & button {
+    border-radius: 5px;
+  }
+}
+
+#send {
+  display: inline-block;
+  width: 20%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  padding: 5px; 
+} 
