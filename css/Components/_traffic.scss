@@ -1,7 +1,11 @@
 
 .traffic {
   @include border($primary-border-color);
-  padding: 0 15px;
+  background-color: #fff;
+  @media (min-width: 768px) {
+    grid-column: 1 / span 2;
+    grid-area: traffic;
+  }
 } 
 
 .traffic-header {
@@ -12,6 +16,7 @@
 .traffic-nav {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .traffic-nav-link {

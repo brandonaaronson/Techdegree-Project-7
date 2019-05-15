@@ -1,14 +1,16 @@
 
 .social {
   @include border($primary-border-color); 
-    display: block;
-    justify-content: center;
-    
 
-    & h3 {
-        width: 100%;
-        margin-left: 15px;
-    }
+  & h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $primary-border-color;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: 1 / span 2;
+  }
+
 }
 
 .social-flex {
@@ -17,8 +19,8 @@
 
  .social-container {
   text-align: center;
-  margin: 0;
-  width: 33%;  
+  margin-bottom: 15px;
+  width: 33%;
 
   &:nth-child(2) {
       border-left: 1px solid $primary-border-color;
@@ -36,12 +38,21 @@
   margin: 10px auto;
   }
   
-  .social-icon {
-    fill: white;
-  }
+.social-icon {
+  fill: white;
+}
   
+.social-text p{
+  margin: 0;
+  &:first-of-type{
+    margin-top: 15px;
+  }
+  &:last-of-type{
+    margin-bottom: 15px;
+  }
+}
+
   .twitter {
-    
     transform: translate3d(0, 5px, 0);
   }
   

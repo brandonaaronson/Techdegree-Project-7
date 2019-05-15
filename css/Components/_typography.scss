@@ -2,18 +2,20 @@
 .app-name-text {
   margin: 0;
   font-size: 1.2em;
+
+  @media (min-width: 768px) {
+    font-size: 2em;
+  }
 }
 
 .name {
     color: #fff;
     margin: 0;
-    padding: 0px 15px;
     opacity: .7;
     align-content: center;
   }
 
   .section-header {
-    margin: 0;
-    padding-top: 15px;
+    margin-left: 15px;
   }
 

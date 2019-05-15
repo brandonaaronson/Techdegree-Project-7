@@ -1,9 +1,24 @@
+
+.new-members {
+  
+  @media (min-width: 768px) {
+    grid-column: 1 / span 1;
+  }
+}
+
+.member-activity {
+
+  @media (min-width: 768px) {
+    grid-column: 2 / span 1;
+  }
+}
+
 .new-members,
 .member-activity {
   @include border($primary-border-color);
   display: flex;
   flex-direction: column;
-  padding: 0 15px 20px 15px;
+  padding-bottom: 20px;
   & p {
     padding-bottom: 8px;
     align-self: flex-start;
@@ -20,9 +35,11 @@
   }
 }
 
+
 .members-container {
   display: flex;
   align-items: center;
+  margin: 0 15px;
 }
 
 .members-text {

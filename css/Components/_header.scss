@@ -1,17 +1,18 @@
 .header {
-    display: grid;
-    grid-template-columns: 1fr 50px 1fr;
+    display: flex;
     background-color: #800000cc; 
     height: 50px;
+    margin: 0;
+    padding: 0;
+    max-width: 1024px;
 }
 
 .app-name {
   height: 50px;
   display: flex;
-  justify-content: left;
   align-items: center;
   color: #fff;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 
@@ -20,14 +21,15 @@
     align-items:  center;
     justify-content: center;
     height: 50px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .current-user {
     display: flex;
     align-items: center;
-    justify-content: center;
     border-left: 1px solid $primary-border-color;
-    margin:  0;
+    margin-right: 15px;;
     height: 50px; 
 
     & img {

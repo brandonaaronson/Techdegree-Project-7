@@ -1,19 +1,25 @@
-
-main {
-  width: 100%;
-//  display: grid;
+#grid {
+  display: grid;
+  background-color: #fff;
+  @media (min-width: 768px){
+    grid-template-columns: 50%;
+    grid-template-areas: 
+      "header header"
+      "alert alert"
+      "traffic traffic"
+      "daily mobile"
+      "social social"
+      "new activity"
+      "message settings";
+    max-width: 969px;
+  }
 }
-
 .main-header {
   display: flex; 
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 0 15px;
-  & h2 {
-    width: 30%;
-    font-size: 1.2em;
-  }
+  margin: 0 15px 0 0;
 
   & input {
     width: 150px;
@@ -22,3 +28,12 @@ main {
     border-radius: 5px;
   }
 }
+
+.headline {
+  width: 110px;
+  font-size: 1.2em;
+  padding: 15px;
+  background-color: white;
+  margin: 0;
+}
+

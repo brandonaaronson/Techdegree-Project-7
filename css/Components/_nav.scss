@@ -1,11 +1,37 @@
-#navigation {
+.navigation {
   display: flex;
-  justify-content: center; 
+  justify-content: space-around;
   align-items: center;
   background-color: #690000cc;
   height: 60px; 
-}
+
+   @media (min-width: 768px) {
+     height: 100%;
+     flex-direction: column;
+     justify-content: flex-start;
+
+     & img{
+       padding-top: 15px;
+     }
+   }
+  }
 
 .font-weight-2{
   font-weight: 200;
+}
+
+.navigation > a img {
+  width: 30px;
+  height: 30px;
+  opacity: .7;
+  padding: 0 15px;
+  
+  &:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+
+  @media (min-width: 768px) {
+    padding: 15px 0 0 0;
+  }
 }

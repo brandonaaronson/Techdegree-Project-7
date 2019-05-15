@@ -1,5 +1,7 @@
 
 .mobile {
     @include border($primary-border-color);
-    padding: 0 15px;
+    @media (min-width: 768px) {
+      grid-column: 2 / span 1;
+    }  
 }

@@ -17,18 +17,6 @@
   }
 }
 
-#navigation > a img {
-  width: 30px;
-  height: 30px;
-  opacity: .7;
-  padding: 0 15px;
-  
-  &:hover {
-    opacity: 1;
-    transition: .3s;
-  }
-}
-
 .social-image {
   display: flex;
   justify-content: center;

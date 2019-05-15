@@ -1,0 +1,26 @@
+
+.alert-banner {
+  display: flex;
+  background-color: rgba(105, 0, 0, .8);
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+
+
+  & p:first-of-type {
+  margin: 5px 15px;
+  }
+  &-close {
+    font-size: 25px;
+      margin: 0 auto;
+      margin-right: 15px;
+  }
+}
+
+.alert {
+
+  @media  (min-width: 768px) {
+  grid-area: alert;
+  grid-column: 1 / span 2;
+  }
+}
