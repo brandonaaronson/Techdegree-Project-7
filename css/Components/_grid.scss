@@ -10,12 +10,14 @@
         "nav"
         "main";
 
-        @media (min-width: 768px) {
+        @include mq('med') {
           grid-template-columns: 55px 1fr;
           grid-template-areas:
           "header header"
           "nav main"; 
-          max-width: 1024px;
+        }
+        @include mq('lg') {
+          max-width: 969px;
         }
 }
 

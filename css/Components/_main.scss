@@ -2,6 +2,8 @@
   background-color: #fff;
   @include mq('med') {
     display: grid;
+  }
+  @include mq('lg') {
     max-width: 969px;
   }
 }
@@ -51,18 +53,21 @@
 .widget-container-half {
   width: 95vw;
 
-  @media (min-width: 768px) {
+  @include mq('med') {
     width: 38vw;
-    max-width: calc(969px / 2);
     margin: 0 auto;
+  }
+  @include mq('lg') {
+    max-width: calc(969px / 2);
   }
 }
 .widget-container-full {
   width: 95vw;
 
-  @media (min-width: 768px) {
+  @include mq('med') {
     width: 90vw;
+  }
+  @include mq('lg') {
     max-width: 950px;
-    
   }
 }

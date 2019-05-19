@@ -2,8 +2,10 @@
 .traffic {
   @include border($primary-border-color);
   background-color: #fff;
-  @media (min-width: 768px) {
+  @include mq('med') {
     grid-column: 1 / span 2;
+  }
+  @include mq('lg') {
     max-width: 969px;
   }
 } 

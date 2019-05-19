@@ -24,7 +24,12 @@ li {
   height: 50px;
   margin: 0;
   padding: 0;
-  max-width: 1024px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1024px;
+  }
 }
 
 .app-name {
@@ -143,12 +148,17 @@ li {
       grid-template-areas: "header" "nav" "main";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid-container {
     -ms-grid-columns: 55px 1fr;
         grid-template-columns: 55px 1fr;
         grid-template-areas: "header header" "nav main";
-    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    max-width: 969px;
   }
 }
 
@@ -464,6 +474,11 @@ option {
   #grid {
     display: -ms-grid;
     display: grid;
+  }
+}
+
+@media (min-width: 1024px) {
+  #grid {
     max-width: 969px;
   }
 }
@@ -531,11 +546,16 @@ option {
   width: 95vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .widget-container-half {
     width: 38vw;
-    max-width: calc(969px / 2);
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .widget-container-half {
+    max-width: calc(969px / 2);
   }
 }
 
@@ -543,18 +563,28 @@ option {
   width: 95vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .widget-container-full {
     width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .widget-container-full {
     max-width: 950px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #traffic-chart {
-    max-width: 950px;
     max-height: 400px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #traffic-chart {
+    max-width: 969px;
   }
 }
 
@@ -567,11 +597,16 @@ option {
   background-color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .traffic {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .traffic {
     max-width: 969px;
   }
 }
@@ -834,7 +869,7 @@ option {
 
 .members-text {
   font-size: 14px;
-  width: 80%;
+  width: 70%;
 }
 
 @media (min-width: 769px) {
@@ -893,11 +928,16 @@ option {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .alert {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .alert {
     max-width: 969px;
   }
 }

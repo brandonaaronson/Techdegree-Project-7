@@ -1,10 +1,12 @@
 .header {
-    display: flex;
-    background-color: #800000cc; 
-    height: 50px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  background-color: #800000cc; 
+  height: 50px;
+  margin: 0;
+  padding: 0;
+    @include mq('lg') {
     max-width: 1024px;
+    }
 }
 
 .app-name {

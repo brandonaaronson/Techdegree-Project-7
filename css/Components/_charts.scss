@@ -1,8 +1,10 @@
 #traffic-chart {
-  @media (min-width: 768px){
-    max-width: 950px;
+  @include mq('med'){
     max-height: 400px;
     margin: 0 auto;
+  }
+  @include mq('lg') {
+    max-width: 969px;
   }
 }
 
