@@ -3,6 +3,7 @@
   
   @media (min-width: 768px) {
     grid-column: 1 / span 1;
+    justify-content: space-between;
   }
 }
 
@@ -10,7 +11,14 @@
 
   @media (min-width: 768px) {
     grid-column: 2 / span 1;
+    border-left: 1px solid $primary-border-color;
+    justify-content: space-evenly;
   }
+}
+
+.arrow{ 
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .new-members,
@@ -18,20 +26,27 @@
   @include border($primary-border-color);
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  
   & p {
     padding-bottom: 8px;
-    align-self: flex-start;
-    margin-top: 15px;
+    margin-top: 0px;
   }
-  & p:last-child {
+  & p:last-of-type {
     margin-left: auto; 
     margin-bottom: 0;
-    align-self: center;
+    
   }
 
   & a {
     padding-top: 10px;
+    width: 80%;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -40,9 +55,39 @@
   display: flex;
   align-items: center;
   margin: 0 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $primary-border-color;
+
+  &:last-child {
+    border: 0;
+  }
 }
 
 .members-text {
- width: 40%;
+  font-size: 14px; 
+  width: 80%;
+
+ @include mq('med') {
+   font-size: 16px;
+   padding-top: 10px;
+ }
+
+ & p {
+
+  &:first-of-type {
+   margin-bottom: 5px;
+   padding-bottom: 0;
+
+   @include mq('med') {
+     margin: 0;
+     font-size: 14px;
+   }
+  }
+
+   &:last-child {
+     margin: 0;
+     font-size: 14px;
+   }
+ }
 }
 

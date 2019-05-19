@@ -1,7 +1,7 @@
 
 .alert-banner {
   display: flex;
-  background-color: rgba(105, 0, 0, .8);
+  background-color: $primary-color;
   color: #fff;
   font-size: 20px;
   align-items: center;
@@ -11,16 +11,22 @@
   margin: 5px 15px;
   }
   &-close {
+    display: flex;
     font-size: 25px;
-      margin: 0 auto;
-      margin-right: 15px;
+    margin: 0 auto;
+    margin-right: 15px;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
 .alert {
 
   @media  (min-width: 768px) {
-  grid-area: alert;
   grid-column: 1 / span 2;
+  max-width: 969px;
   }
 }

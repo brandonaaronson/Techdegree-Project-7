@@ -4,7 +4,7 @@
   background-color: #fff;
   @media (min-width: 768px) {
     grid-column: 1 / span 2;
-    grid-area: traffic;
+    max-width: 969px;
   }
 } 
 
@@ -20,11 +20,15 @@
 }
 
 .traffic-nav-link {
-  & li {
-    margin: 0 10px;
-  }
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px;    
+  
   &:hover {
     transition: .3s;
     color: #fff;
+    background-color: $selected-color;
+    transition: .3s;
+    cursor: pointer;
   }
 }

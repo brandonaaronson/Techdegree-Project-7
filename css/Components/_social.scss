@@ -2,29 +2,47 @@
 .social {
   @include border($primary-border-color); 
 
-  & h3 {
-    padding-bottom: 15px;
-    border-bottom: 1px solid $primary-border-color;
-  }
-
-  @media (min-width: 768px) {
+  @include mq('med') {
     grid-column: 1 / span 2;
   }
 
+  & h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $primary-border-color;
+    @include mq('med'){
+      border: 0;
+      padding: 0;
+    }
+  }
 }
 
 .social-flex {
   display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
  .social-container {
-  text-align: center;
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 0;
   width: 33%;
-
+  
   &:nth-child(2) {
       border-left: 1px solid $primary-border-color;
       border-right: 1px solid $primary-border-color; 
+      
+  }
+
+  @include mq('med') {
+    border: 1px solid $primary-border-color;
+    background-color: $secondary-background-color;
+    width: 30%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -33,9 +51,13 @@
   justify-content: center;
   background-color: #800000cc;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+
+  @include mq('med') {
+    margin: 10px 10px;
+  }
   }
   
 .social-icon {
@@ -46,6 +68,8 @@
   margin: 0;
   &:first-of-type{
     margin-top: 15px;
+    color: $primary-color;
+    font-weight: bold;
   }
   &:last-of-type{
     margin-bottom: 15px;
@@ -54,15 +78,15 @@
 
   .twitter {
     transform: translate3d(0, 5px, 0);
+    width: 65%;
   }
   
   .facebook {
     display: block;
-    width: 75%;
-    transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 0, 0);
   }
   
   .google-plus {
     display: block; 
-    width: 75%; 
+    width: 65%;
   }

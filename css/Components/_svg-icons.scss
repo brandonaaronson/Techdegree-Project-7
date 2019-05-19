@@ -25,6 +25,10 @@
   width: 80px;
   height: 80px;
   margin: 10px auto;
+
+  @include mq('med') {
+    margin: 10px 10px;
+  }
 }
 
 .social-icon {

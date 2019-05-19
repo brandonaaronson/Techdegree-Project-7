@@ -5,6 +5,9 @@
   & button {
     border-radius: 5px;
   }
+  @include mq('med') {
+    padding-top: auto;
+  }
 }
 
 #send {

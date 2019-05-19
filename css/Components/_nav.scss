@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #690000cc;
+  background-color: #690000;
   height: 60px; 
 
    @media (min-width: 768px) {
@@ -25,13 +25,23 @@
   height: 30px;
   opacity: .7;
   padding: 0 15px;
-  
+
   &:hover {
     opacity: 1;
+    cursor: pointer;
     transition: .3s;
   }
 
   @media (min-width: 768px) {
     padding: 15px 0 0 0;
   }
+}
+
+
+.selected {
+  background-color: $selected-color;
+}
+
+.visitsIcon-icon img{
+  transform: translate3d(2px, 0, 0) 
 }

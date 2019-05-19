@@ -3,5 +3,6 @@
     @include border($primary-border-color);
     @media (min-width: 768px) {
       grid-column: 2 / span 1;
+      border-left: 1px solid $primary-border-color;
     }  
 }
