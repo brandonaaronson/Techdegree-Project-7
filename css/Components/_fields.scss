@@ -5,6 +5,10 @@
   margin-top: 10px;
   border-radius: 5px;  
   padding: 4px;
+
+  @include mq('med') {
+    height: 100px;
+  }
 }
 
 #userField {

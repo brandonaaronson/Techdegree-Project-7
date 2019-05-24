@@ -20,7 +20,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #800000cc;
+  background-color: #880000;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -108,6 +108,37 @@ li {
   margin-top: 10px;
 }
 
+#notifications {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-links {
+  display: none;
+  position: absolute;
+  background-color: #880000;
+  min-width: 160px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.notification-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.notification-links a:hover {
+  background-color: #995050;
+}
+
+.show {
+  display: block;
+}
+
 .font-weight-2 {
   font-weight: 200;
 }
@@ -185,20 +216,20 @@ li {
   margin: 0 auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "header" "nav" "main";
+      grid-template-areas: "header" "nav" "main";
 }
 
 @media (min-width: 769px) {
   .grid-container {
     -ms-grid-columns: 55px 1fr;
         grid-template-columns: 55px 1fr;
-        grid-template-areas: "header header" "nav main";
+        grid-template-areas: "header header" "nav main";
   }
 }
 
 @media (min-width: 1024px) {
   .grid-container {
-    max-width: 969px;
+    max-width: 1024px;
   }
 }
 
@@ -292,6 +323,7 @@ li {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
+    border-bottom: none;
   }
 }
 
@@ -314,6 +346,16 @@ li {
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
     border-left: 1px solid #cfcfcf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -414,7 +456,6 @@ option {
 .name {
   color: #fff;
   margin: 0;
-  opacity: .7;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -473,6 +514,12 @@ option {
   margin-top: 10px;
   border-radius: 5px;
   padding: 4px;
+}
+
+@media (min-width: 769px) {
+  .form-area {
+    height: 100px;
+  }
 }
 
 #userField {
@@ -744,6 +791,10 @@ option {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

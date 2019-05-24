@@ -1,4 +1,36 @@
 
+// -- notification drop menu -- //
+let notifyMenu = document.querySelector('.notify-icon');
+
+// -- closes menu if clicked outside -- //
+
+window.addEventListener('click', (e) => {
+  let menu = document.getElementById('notifyLinks');
+  
+
+  if (e.target === notifyMenu) {
+    menu = document.getElementsByClassName('notification-links');
+    let notifyDot = document.querySelector('.notify-icon-new');
+    notifyDot.style.display = 'none';
+
+    for (i = 0; i < menu.length; i ++) {
+      let openMenu = menu[i];
+      if (openMenu.classList.contains('show')) {
+        openMenu.classList.remove('show');
+        let notifyOld = document.getElementsByClassName('notify-opacity');
+        if (notifyOld.classList.includes('show') === false) {
+            notifyOld.style.opacity = .8;
+        }
+      } else if (openMenu.classList.contains('notification-links')) {
+        openMenu.classList.add('show');
+      } 
+    }
+  } else if (menu.classList.contains('show')) {
+    menu.classList.remove('show');
+  }
+});
+// -- alert banner -- //
+
 const alertNotification = document.getElementById('alert');
 
 // -- creates the html for the banner --//
@@ -36,3 +68,7 @@ send.addEventListener('click', e => {
     alert(`Message successfully sent to: ${user.value}`);
   }
 });
+
+function newFunction() {
+  document.querySelector('.notification-links').classList.toggle('show');
+}
