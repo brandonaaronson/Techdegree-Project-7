@@ -36,13 +36,13 @@
 
 .selected {
   background-color: $selected-color;
+  color: #fff;
 }
 
-.selected-nav {
+.dashboard-icon {
+  padding-bottom: 3px;
   border-bottom: 2px solid $selected-color;
-  opacity: 1;
 }
-
 .visitsIcon-icon img{
   transform: translate3d(2px, 0, 0) 
 }

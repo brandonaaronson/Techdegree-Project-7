@@ -1,7 +1,6 @@
 
 // -- notification drop menu -- //
 let notifyMenu = document.querySelector('.notify-icon');
-
 // -- closes menu if clicked outside -- //
 
 window.addEventListener('click', (e) => {
@@ -17,10 +16,6 @@ window.addEventListener('click', (e) => {
       let openMenu = menu[i];
       if (openMenu.classList.contains('show')) {
         openMenu.classList.remove('show');
-        let notifyOld = document.getElementsByClassName('notify-opacity');
-        if (notifyOld.classList.includes('show') === false) {
-            notifyOld.style.opacity = .8;
-        }
       } else if (openMenu.classList.contains('notification-links')) {
         openMenu.classList.add('show');
       } 
