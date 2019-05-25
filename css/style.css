@@ -96,6 +96,7 @@ li {
   color: #fff;
   -webkit-transform-origin: center;
           transform-origin: center;
+  cursor: pointer;
 }
 
 .notify-icon-new {
@@ -590,7 +591,6 @@ option {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 60%;
-    width: 80%;
     border-left: 1px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
     margin: 0;
@@ -605,6 +605,13 @@ option {
   padding: 15px;
   background-color: white;
   margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .headline {
+    width: 160px;
+  }
 }
 
 .widget-container-half {
@@ -927,9 +934,10 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 15px;
+  margin: 10px 15px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #cfcfcf;
+  height: 60px;
 }
 
 .members-container:last-child {

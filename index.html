@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/toggle-switch.css">
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
     </head>
     <body>
       <div class="grid-container">
@@ -18,9 +18,7 @@
                 <h1 class="app-name-text"><span  class="font-weight1">Your</span><span class="font-weight-2">App&trade;</span></h1>
               </div>
                   <div class="notify">
-                      <svg class="notify-icon">
-                          <use xlink:href="sprite/sprite.svg#icons--icon-bell"/>
-                      </svg>
+                      <img class="notify-icon" src="svg/icons/icon-bell.svg" alt="">
                       <div class="notify-icon-new">
                       </div>
                       <div id="notifications">
@@ -286,8 +284,7 @@
                 </section>
         </main>
       </div>
-        <script src="chart.js"></script>
-        <script src="dashboard.js"></script>
-        <script src="widgets.js"></script>
+        <script src="js/dashboard.js"></script>
+        <script src="js/widgets.js"></script>
     </body>
 </html>
