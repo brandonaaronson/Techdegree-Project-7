@@ -1,6 +1,0 @@
-.daily {
-    @include border($primary-border-color);
-    @media (min-width: 768px) {
-      grid-column: 1 / span 1;
-    }  
-}
